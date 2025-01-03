@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sidebar Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* Course Detail Page */
+.course-detail {
+    padding: 30px;
+    width: 100%;
+}
+
+/* Course Header */
+.course-header {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.course-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.course-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.course-info .instructor,
+.course-info .rating,
+.course-info .price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #0099ff;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #007acc;
+}
+
+/* Course Overview */
+.course-overview {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.course-overview h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.course-overview p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Instructor Info */
+.instructor-info {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.instructor-bio img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bio-text p {
+    font-size: 18px;
+}
+
+/* Course Syllabus */
+.course-syllabus {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.course-syllabus h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.course-syllabus ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.course-syllabus ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Reviews Section */
+.course-reviews {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.course-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .course-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-header .course-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .instructor-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instructor-bio img {
+        margin-bottom: 20px;
+    }
+}

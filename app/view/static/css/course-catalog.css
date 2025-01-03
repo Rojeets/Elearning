@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sidebar Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Course Catalog Page */
+.catalog-content {
+    padding: 30px;
+    width: 100%;
+}
+
+/* Search Bar Section */
+.search-bar {
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Categories Section */
+.categories {
+    margin-bottom: 40px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.categories ul li a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+.categories ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Course List Section */
+.course-list h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.course-info {
+    max-width: 600px;
+}
+
+.course-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #0099ff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #007acc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .course-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card img {
+        width: 100%;
+        height: auto;
+    }
+}

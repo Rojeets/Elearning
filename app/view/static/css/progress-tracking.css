@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Progress Tracking Page */
+.progress-content {
+    margin-left: 260px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Overall Progress Section */
+.overall-progress {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #eaeaea;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.overall-progress p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Courses Section */
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Learning Goals Section */
+.learning-goals {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.learning-goals h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.learning-goals ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.learning-goals ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #0099ff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #007acc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+}
